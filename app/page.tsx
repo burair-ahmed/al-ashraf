@@ -295,19 +295,14 @@ export default function HomePage() {
             <AnimatedSection delay={0.3}>
               <div className="bg-white rounded-3xl border border-gold/10 p-8 flex flex-col items-center justify-center min-h-[260px] shadow-sm hover:shadow-md hover:border-gold/30 hover:-translate-y-1 transition-all duration-300 group">
                 <div className="flex flex-col items-center text-center">
-                  {/* Arm Arch Logo (Crest matching reference) */}
-                  <svg className="w-20 h-20 mb-3 text-[#0F172A]" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    {/* Outer structural arch/pyramid */}
-                    <path d="M15 80 L50 20 L85 80" stroke="currentColor" strokeWidth="3" strokeLinejoin="round" />
-                    {/* Inner Structural Triangle */}
-                    <path d="M28 80 L50 40 L72 80" stroke="currentColor" strokeWidth="2" />
-                    {/* Golden Sun inside */}
-                    <circle cx="50" cy="65" r="10" fill="#C9A356" />
-                    <line x1="50" y1="52" x2="50" y2="48" stroke="#C9A356" strokeWidth="2" />
-                    <line x1="50" y1="78" x2="50" y2="82" stroke="#C9A356" strokeWidth="2" />
-                    <line x1="38" y1="65" x2="34" y2="65" stroke="#C9A356" strokeWidth="2" />
-                    <line x1="62" y1="65" x2="66" y2="65" stroke="#C9A356" strokeWidth="2" />
-                  </svg>
+                  {/* ArmArch Logo */}
+                  <div className="h-20 flex items-center justify-center mb-4">
+                    <img
+                      src="/armarch-logo.png"
+                      alt="ArmArch Logo"
+                      className="max-h-full w-auto object-contain"
+                    />
+                  </div>
                   <h4 className="font-display font-black text-xl text-[#0F172A] tracking-widest uppercase">
                     ArmArch
                   </h4>
