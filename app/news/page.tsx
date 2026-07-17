@@ -22,7 +22,7 @@ export default function NewsPage() {
         headline="Latest from Al Ashraf Group"
         subheadline="Project milestones, division updates, and announcements from across the group."
         image="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80"
-        imageAlt="AGOC news and updates"
+        imageAlt="Al-Ashraf GOC news and updates"
         breadcrumbs={[{ label: "News & Updates" }]}
       />
 

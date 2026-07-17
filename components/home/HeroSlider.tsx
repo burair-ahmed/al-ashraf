@@ -47,7 +47,7 @@ const slides = [
 ];
 
 const brandSeals = [
-  { short: "AGOC", name: "Al Ashraf Group" },
+  { short: "Al-Ashraf GOC", name: "Al Ashraf Group" },
   { short: "AAC", name: "Al Ashraf Construction" },
   { short: "AAD", name: "Al Ashraf Dairy" },
   { short: "AEC", name: "Al Ashraf E-Commerce" },

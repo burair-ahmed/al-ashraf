@@ -31,10 +31,12 @@ export function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  useEffect(() => {
+  const [prevPathname, setPrevPathname] = useState(pathname);
+  if (pathname !== prevPathname) {
+    setPrevPathname(pathname);
     setMobileOpen(false);
     setDropdownOpen(false);
-  }, [pathname]);
+  }
 
   useEffect(() => {
     const handler = (e: MouseEvent) => {
@@ -60,14 +62,13 @@ export function Navbar() {
           <div className="flex h-18 items-center justify-between">
 
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-3 group" aria-label="Al Ashraf Group - Home">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gold font-display font-black text-charcoal-800 text-lg group-hover:bg-gold-light transition-colors duration-200">
-                AG
-              </div>
-              <div className="leading-tight">
-                <p className="font-display font-bold text-warm-50 text-sm">Al Ashraf Group</p>
-                <p className="text-warm-500 text-[10px] uppercase tracking-widest">of Companies</p>
-              </div>
+            <Link href="/" className="flex items-center group" aria-label="Al Ashraf Group - Home">
+              <img
+                src="/al-ashraf-logo.png"
+                alt="Al Ashraf Group of Companies Logo"
+                style={{ height: "52px", width: "auto" }}
+                className="object-contain transition-transform duration-200 group-hover:scale-[1.02]"
+              />
             </Link>
 
             {/* Desktop Nav */}

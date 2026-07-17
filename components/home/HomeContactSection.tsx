@@ -83,7 +83,7 @@ export function HomeContactSection() {
                 Send Us a Message
               </h3>
               <p className="text-warm-500 text-sm mb-8 leading-relaxed">
-                Fill out the form below. We'll route your request to the appropriate division.
+                Fill out the form below. We&apos;ll route your request to the appropriate division.
               </p>
 
               <ContactForm />

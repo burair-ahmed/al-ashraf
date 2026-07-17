@@ -30,33 +30,16 @@ export function Footer() {
 
           {/* Company info */}
           <div className="lg:col-span-1">
-            <Link href="/" className="flex items-center gap-3 mb-5 group" aria-label="Al Ashraf Group — Home">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gold font-display font-black text-charcoal-800 text-lg group-hover:bg-gold-light transition-colors duration-200">
-                AG
-              </div>
-              <div className="leading-tight">
-                <p className="font-display font-bold text-warm-50 text-sm">Al Ashraf Group</p>
-                <p className="text-warm-600 text-[10px] uppercase tracking-widest">of Companies</p>
-              </div>
+            <Link href="/" className="inline-block mb-5 group" aria-label="Al Ashraf Group — Home">
+              <img
+                src="/al-ashraf-logo.png"
+                alt="Al Ashraf Group of Companies Logo"
+                className="h-16 w-auto object-contain transition-transform duration-200 group-hover:scale-[1.02]"
+              />
             </Link>
-            <p className="text-warm-500 text-sm leading-relaxed mb-6">
-              Founded in 2017, AGOC is a diversified conglomerate headquartered in Karachi, delivering excellence across construction, dairy, e-commerce, and consumer services.
+            <p className="text-warm-500 text-sm leading-relaxed">
+              Founded in 2017, Al-Ashraf GOC is a diversified conglomerate headquartered in Karachi, delivering excellence across construction, dairy, e-commerce, and consumer services.
             </p>
-
-            <div className="space-y-3 text-sm text-warm-500">
-              <div className="flex items-start gap-2.5">
-                <MapPin className="h-4 w-4 text-gold mt-0.5 shrink-0" />
-                <span>Plot # B-02, Main University Rd, Block 10 Gulshan-e-Iqbal, Karachi, Pakistan</span>
-              </div>
-              <a href="tel:+922134944448" className="flex items-center gap-2.5 hover:text-gold transition-colors duration-200">
-                <Phone className="h-4 w-4 text-gold shrink-0" />
-                <span>+92 21 34944448 / +92 21 34941122</span>
-              </a>
-              <a href="mailto:info@alashrafgroup.com" className="flex items-center gap-2.5 hover:text-gold transition-colors duration-200">
-                <Mail className="h-4 w-4 text-gold shrink-0" />
-                <span>info@alashrafgroup.com</span>
-              </a>
-            </div>
           </div>
 
           {/* Divisions */}
@@ -87,14 +70,26 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Social + Newsletter */}
+          {/* Contact & Socials */}
           <div>
-            <h3 className="text-eyebrow text-warm-500 mb-5">Stay Connected</h3>
-            <p className="text-sm text-warm-500 mb-4">
-              Follow our latest projects, news, and group updates.
-            </p>
+            <h3 className="text-eyebrow text-warm-500 mb-5">Contact Us</h3>
+            <div className="space-y-3.5 text-sm text-warm-500 mb-6">
+              <div className="flex items-start gap-2.5">
+                <MapPin className="h-4 w-4 text-gold mt-0.5 shrink-0" />
+                <span>Plot # B-02, Main University Rd, Block 10 Gulshan-e-Iqbal, Karachi, Pakistan</span>
+              </div>
+              <a href="tel:+922134944448" className="flex items-center gap-2.5 hover:text-gold transition-colors duration-200">
+                <Phone className="h-4 w-4 text-gold shrink-0" />
+                <span>+92 21 34944448 / +92 21 34941122</span>
+              </a>
+              <a href="mailto:info@alashrafgroup.com" className="flex items-center gap-2.5 hover:text-gold transition-colors duration-200">
+                <Mail className="h-4 w-4 text-gold shrink-0" />
+                <span>info@alashrafgroup.com</span>
+              </a>
+            </div>
 
-            <div className="flex flex-wrap gap-3 mb-8">
+            <h4 className="text-sm font-semibold text-warm-300 mb-3">Connect With Us</h4>
+            <div className="flex flex-wrap gap-3">
               {socialLinks.map(({ label, href, icon: Icon }) => (
                 <a
                   key={label}
@@ -108,22 +103,6 @@ export function Footer() {
                 </a>
               ))}
             </div>
-
-            <h4 className="text-sm font-semibold text-warm-300 mb-3">Newsletter</h4>
-            <form className="flex gap-2" onSubmit={(e) => e.preventDefault()}>
-              <input
-                type="email"
-                placeholder="Your email"
-                className="flex-1 rounded-full bg-surface-4 border border-white/10 px-4 py-2 text-sm text-warm-200 placeholder-warm-600 focus:outline-none focus:border-gold transition-colors duration-200"
-                aria-label="Newsletter email"
-              />
-              <button
-                type="submit"
-                className="rounded-full bg-gold px-4 py-2 text-sm font-semibold text-charcoal-800 hover:bg-gold-light transition-colors duration-200"
-              >
-                →
-              </button>
-            </form>
           </div>
         </div>
 

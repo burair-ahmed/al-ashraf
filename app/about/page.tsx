@@ -19,13 +19,13 @@ export const metadata: Metadata = {
 
 const timeline = [
   { year: "2017", title: "The Foundation",           description: "Al Ashraf Group of Companies is established in Karachi by Muhammad Ashraf, launching with a focus on construction and civil works in Gulshan-e-Iqbal." },
-  { year: "2018", title: "First Major Project",       description: "Completion of the group's first major residential complex — establishing AGOC's reputation for quality construction." },
-  { year: "2019", title: "Dairy Division Launch",     description: "AGOC enters the consumer goods sector with the launch of Al Ashraf Dairy Products, beginning distribution across Karachi." },
+  { year: "2018", title: "First Major Project",       description: "Completion of the group's first major residential complex — establishing Al-Ashraf GOC's reputation for quality construction." },
+  { year: "2019", title: "Dairy Division Launch",     description: "Al-Ashraf GOC enters the consumer goods sector with the launch of Al Ashraf Dairy Products, beginning distribution across Karachi." },
   { year: "2020", title: "Resilience Through Challenge", description: "The group navigates global disruption, maintaining operations across all divisions and delivering ongoing projects despite supply chain headwinds." },
-  { year: "2021", title: "E-commerce Expansion",     description: "AGOC launches its e-commerce division, entering the rapidly growing Pakistani online retail market." },
-  { year: "2022", title: "Consumer Services & Infrastructure", description: "The Consumer Services division is formalized; AGOC completes its first major infrastructure rehabilitation project." },
-  { year: "2024", title: "Largest Project to Date",  description: "Groundbreaking on the North Nazimabad Mixed-Use Plaza — AGOC's most ambitious development at 200,000 sq ft." },
-  { year: "Today","title": "A Diversified Group",   description: "AGOC operates four established divisions, employs 200+ professionals, and continues to expand across Karachi and beyond." },
+  { year: "2021", title: "E-commerce Expansion",     description: "Al-Ashraf GOC launches its e-commerce division, entering the rapidly growing Pakistani online retail market." },
+  { year: "2022", title: "Consumer Services & Infrastructure", description: "The Consumer Services division is formalized; Al-Ashraf GOC completes its first major infrastructure rehabilitation project." },
+  { year: "2024", title: "Largest Project to Date",  description: "Groundbreaking on the North Nazimabad Mixed-Use Plaza — Al-Ashraf GOC's most ambitious development at 200,000 sq ft." },
+  { year: "Today","title": "A Diversified Group",   description: "Al-Ashraf GOC operates four established divisions, employs 200+ professionals, and continues to expand across Karachi and beyond." },
 ];
 
 export default function AboutPage() {
@@ -72,7 +72,7 @@ export default function AboutPage() {
               <div className="relative rounded-3xl overflow-hidden h-96">
                 <Image
                   src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=80"
-                  alt="AGOC construction project"
+                  alt="Al-Ashraf GOC construction project"
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -81,7 +81,7 @@ export default function AboutPage() {
                 <div className="absolute bottom-6 left-6 right-6">
                   <p className="text-xs text-warm-400 uppercase tracking-wider mb-1">Mission</p>
                   <p className="text-warm-100 font-display font-semibold text-lg leading-snug">
-                    "Building lasting impressions for clients and communities."
+                    &ldquo;Building lasting impressions for clients and communities.&rdquo;
                   </p>
                 </div>
               </div>
@@ -116,7 +116,7 @@ export default function AboutPage() {
             <AnimatedSection direction="left" className="rounded-2xl border border-white/5 bg-surface-3 p-8">
               <p className="text-eyebrow text-gold mb-3">Our Vision</p>
               <p className="font-display font-bold text-display-md text-warm-50 mb-4">
-                To become Pakistan's most trusted diversified business group.
+                To become Pakistan&apos;s most trusted diversified business group.
               </p>
               <p className="text-warm-400 text-sm leading-relaxed">
                 We aspire to build a group that is recognized nationally for its integrity, scale, and commitment to improving the lives of the people and communities it serves.
@@ -128,7 +128,7 @@ export default function AboutPage() {
             {[
               { icon: Shield, title: "Strength",    accent: "gold" as const, description: "The structural integrity to deliver at scale — in our buildings, our supply chains, and our organizational culture. We do not cut corners. Ever." },
               { icon: Zap,    title: "Performance", accent: "gold" as const, description: "Measurable results matter to us. We track quality, timelines, and satisfaction across every project and product line, always striving to do better." },
-              { icon: Heart,  title: "Passion",     accent: "teal" as const, description: "A genuine love for what we do and who we do it for. Our people are passionate about their work, and that energy shows in everything AGOC delivers." },
+              { icon: Heart,  title: "Passion",     accent: "teal" as const, description: "A genuine love for what we do and who we do it for. Our people are passionate about their work, and that energy shows in everything Al-Ashraf GOC delivers." },
             ].map((v, i) => (
               <AnimatedSection key={v.title} delay={i * 0.1}>
                 <ValueCard {...v} className="h-full" />
@@ -173,7 +173,7 @@ export default function AboutPage() {
       <section className="py-section-lg bg-surface-2" aria-label="Leadership team">
         <Container>
           <AnimatedSection>
-            <SectionHeading eyebrow="Our Team" title="The People Behind AGOC" description="A team of experienced professionals driving our four divisions forward." align="center" />
+            <SectionHeading eyebrow="Our Team" title="The People Behind Al-Ashraf GOC" description="A team of experienced professionals driving our four divisions forward." align="center" />
           </AnimatedSection>
           <div className="mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {teamMembers.map((member, i) => (

@@ -86,7 +86,7 @@ export default function ContactPage() {
             <AnimatedSection direction="left" className="lg:col-span-3">
               <div className="rounded-3xl bg-surface-3 border border-white/5 shadow-card p-8 lg:p-10">
                 <h2 className="font-display font-bold text-display-md text-warm-50 mb-2">Send Us a Message</h2>
-                <p className="text-warm-500 text-sm mb-8">Fill in the form below and we'll respond within 1–2 business days.</p>
+                <p className="text-warm-500 text-sm mb-8">Fill in the form below and we&apos;ll respond within 1–2 business days.</p>
                 <ContactForm />
               </div>
             </AnimatedSection>

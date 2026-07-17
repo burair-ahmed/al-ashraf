@@ -24,7 +24,7 @@ const cultureValues = [
   { icon: Users,     title: "Collaborative Culture",  description: "We work as one team across all four divisions, sharing knowledge, resources, and wins." },
   { icon: TrendingUp,title: "Growth Opportunities",   description: "A growing group means growing careers. We promote from within and invest in our people." },
   { icon: Heart,     title: "Community Impact",       description: "Work that matters — every project, product, and service makes a difference in Karachi." },
-  { icon: Award,     title: "Performance Rewarded",   description: "We recognize and reward excellence. High performers thrive in the AGOC environment." },
+  { icon: Award,     title: "Performance Rewarded",   description: "We recognize and reward excellence. High performers thrive in the Al-Ashraf GOC environment." },
 ];
 
 export default function CareersPage() {
@@ -36,7 +36,7 @@ export default function CareersPage() {
         headline="Build Your Career with Al Ashraf Group"
         subheadline="Be part of a growing, diversified group that values Strength, Performance, and Passion in everything it does."
         image="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1920&q=80"
-        imageAlt="AGOC team working together"
+        imageAlt="Al-Ashraf GOC team working together"
         breadcrumbs={[{ label: "Careers" }]}
       />
 
@@ -44,7 +44,7 @@ export default function CareersPage() {
       <section className="py-section-lg bg-surface-1" aria-label="Company culture">
         <Container>
           <AnimatedSection>
-            <SectionHeading eyebrow="Life at AGOC" title="Why Work with Us?" description="A career at Al Ashraf Group means joining a team that is ambitious, diverse, and committed to building something lasting." align="center" />
+            <SectionHeading eyebrow="Life at Al-Ashraf GOC" title="Why Work with Us?" description="A career at Al Ashraf Group means joining a team that is ambitious, diverse, and committed to building something lasting." align="center" />
           </AnimatedSection>
           <div className="mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {cultureValues.map((item, i) => (
@@ -105,7 +105,7 @@ export default function CareersPage() {
         heading="Send Us Your CV"
         description="We're always looking for talented people. If you don't see a suitable opening, send us your CV and we'll keep you in mind."
         primaryCta={{ label: "Send Your CV",     href: "/contact" }}
-        secondaryCta={{ label: "Learn About AGOC", href: "/about" }}
+        secondaryCta={{ label: "Learn About Al-Ashraf GOC", href: "/about" }}
       />
     </>
   );

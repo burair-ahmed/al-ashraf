@@ -38,7 +38,7 @@ import { HomeContactSection } from "@/components/home/HomeContactSection";
 export const metadata: Metadata = {
   title: "Al Ashraf Group of Companies | Building Lasting Impressions",
   description:
-    "AGOC is a diversified Pakistani conglomerate headquartered in Karachi, delivering excellence across construction, dairy, e-commerce, and consumer services since 2017.",
+    "Al-Ashraf GOC is a diversified Pakistani conglomerate headquartered in Karachi, delivering excellence across construction, dairy, e-commerce, and consumer services since 2017.",
 };
 
 const teamMembers = [
@@ -149,7 +149,7 @@ export default function HomePage() {
                     VALUES
                   </h3>
                   <p className="text-warm-400 text-sm leading-relaxed">
-                    We're a trusted partner with a solid track record and a skilled team, ensuring excellence and innovation, our commitment extends to our people, customers, and communities, executing care for all and the environment.
+                    We&apos;re a trusted partner with a solid track record and a skilled team, ensuring excellence and innovation, our commitment extends to our people, customers, and communities, executing care for all and the environment.
                   </p>
                 </div>
               </div>

@@ -1,6 +1,6 @@
-# 🏛️ Al Ashraf Group of Companies (AGOC) Corporate Portal
+# 🏛️ Al Ashraf Group of Companies (Al-Ashraf GOC) Corporate Portal
 
-Welcome to the official repository for the **Al Ashraf Group of Companies (AGOC)** web portal. This is a premium, high-performance web application designed to showcase the diversified business verticals, corporate structure, projects portfolio, and career opportunities of the AGOC conglomerate.
+Welcome to the official repository for the **Al Ashraf Group of Companies (Al-Ashraf GOC)** web portal. This is a premium, high-performance web application designed to showcase the diversified business verticals, corporate structure, projects portfolio, and career opportunities of the Al-Ashraf GOC conglomerate.
 
 ---
 

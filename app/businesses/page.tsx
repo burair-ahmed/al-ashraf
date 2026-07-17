@@ -20,7 +20,7 @@ export default function BusinessesPage() {
         variant="inner"
         eyebrow="Our Businesses"
         headline="Four Divisions, One Purpose"
-        subheadline="Each AGOC division operates with independence and focus while sharing the group's core values of Strength, Performance, and Passion."
+        subheadline="Each Al-Ashraf GOC division operates with independence and focus while sharing the group's core values of Strength, Performance, and Passion."
         image="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1920&q=80"
         imageAlt="Al Ashraf Group businesses overview"
         breadcrumbs={[{ label: "Our Businesses" }]}
@@ -32,7 +32,7 @@ export default function BusinessesPage() {
             <SectionHeading
               eyebrow="Divisions"
               title="Explore Our Verticals"
-              description="From infrastructure that shapes a city's skyline to fresh dairy products that reach breakfast tables — AGOC spans the full spectrum of Pakistani commerce."
+              description="From infrastructure that shapes a city's skyline to fresh dairy products that reach breakfast tables — Al-Ashraf GOC spans the full spectrum of Pakistani commerce."
             />
           </AnimatedSection>
 

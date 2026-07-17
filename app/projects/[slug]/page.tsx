@@ -155,7 +155,7 @@ export default async function ProjectDetailPage({ params }: Props) {
 
       <CTASection
         eyebrow="Work With Us"
-        heading="Start Your Next Project With AGOC"
+        heading="Start Your Next Project With Al-Ashraf GOC"
         description="Our team handles every stage — from feasibility and design to construction and handover."
         primaryCta={{ label: "Contact Our Team", href: "/contact" }}
         secondaryCta={{ label: "View All Projects", href: "/projects" }}

@@ -129,7 +129,7 @@ export default function ProjectsPage() {
         heading="Have a Project in Mind?"
         description="Our construction and real estate team is ready to discuss your requirements — from feasibility to final handover."
         primaryCta={{ label: "Get in Touch", href: "/contact" }}
-        secondaryCta={{ label: "About AGOC",  href: "/about" }}
+        secondaryCta={{ label: "About Al-Ashraf GOC",  href: "/about" }}
       />
     </>
   );

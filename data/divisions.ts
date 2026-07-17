@@ -110,7 +110,7 @@ export const divisions: Division[] = [
     description:
       "Our consumer services division provides a broad range of essential services to households and businesses across Karachi, driven by reliability and community focus.",
     longDescription:
-      "Al Ashraf Consumer Services is our general services vertical, dedicated to meeting the everyday needs of Karachi's residents and businesses. From facility management to maintenance and general services, we bring the same commitment to quality and reliability that defines every AGOC enterprise. Our teams are trained, professional, and community-minded — because we believe great service is the foundation of lasting relationships.",
+      "Al Ashraf Consumer Services is our general services vertical, dedicated to meeting the everyday needs of Karachi's residents and businesses. From facility management to maintenance and general services, we bring the same commitment to quality and reliability that defines every Al-Ashraf GOC enterprise. Our teams are trained, professional, and community-minded — because we believe great service is the foundation of lasting relationships.",
     heroImage:
       "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1920&q=80", // TODO: replace with real service photo
     cardImage:

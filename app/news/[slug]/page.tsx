@@ -85,7 +85,7 @@ export default async function NewsDetailPage({ params }: Props) {
 
       <CTASection
         eyebrow="Stay Connected"
-        heading="Want to Hear More from AGOC?"
+        heading="Want to Hear More from Al-Ashraf GOC?"
         description="Follow us on social media or reach out directly to learn about projects, products, and opportunities."
         primaryCta={{ label: "Contact Us",    href: "/contact" }}
         secondaryCta={{ label: "View All News", href: "/news" }}

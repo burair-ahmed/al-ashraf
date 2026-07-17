@@ -25,10 +25,10 @@ export const metadata: Metadata = {
     template: "%s | Al Ashraf Group of Companies",
   },
   description:
-    "Al Ashraf Group of Companies (AGOC) is a diversified Pakistani business group headquartered in Karachi, operating across construction & real estate, dairy products, e-commerce, and consumer services.",
+    "Al Ashraf Group of Companies (Al-Ashraf GOC) is a diversified Pakistani business group headquartered in Karachi, operating across construction & real estate, dairy products, e-commerce, and consumer services.",
   keywords: [
     "Al Ashraf Group",
-    "AGOC",
+    "Al-Ashraf GOC",
     "Pakistan construction company",
     "Karachi real estate",
     "Pakistani conglomerate",
