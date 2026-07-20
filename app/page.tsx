@@ -34,6 +34,8 @@ import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { HeroSlider } from "@/components/home/HeroSlider";
 import { CareersForm } from "@/components/home/CareersForm";
 import { HomeContactSection } from "@/components/home/HomeContactSection";
+import { CompanyCard } from "@/components/ui/CompanyCard";
+import { companies } from "@/data/companies";
 
 export const metadata: Metadata = {
   title: "Al Ashraf Group of Companies | Building Lasting Impressions",
@@ -234,93 +236,31 @@ export default function HomePage() {
         </Container>
       </section>
 
-      {/* ── 5. Our Portfolio ── */}
-      <section className="py-section bg-surface-2 border-t border-b border-white/5" id="portfolio" aria-label="Our Portfolio">
+      {/* ── 5. Our Companies ── */}
+      <section className="py-section bg-surface-2 border-t border-b border-white/5" id="companies" aria-label="Our Companies">
         <Container>
           <AnimatedSection className="text-center mb-12">
             <SectionHeading
-              title="Our Portfolio"
+              title="Our Companies"
               align="center"
-              description="A showcase of our diverse real estate and business subsidiaries."
+              description="Explore the specialized business subsidiaries driving the Al Ashraf Group's growth."
             />
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            
-            {/* Card 1: Indus Enclave */}
-            <AnimatedSection delay={0.1}>
-              <div className="bg-white rounded-3xl border border-gold/10 p-8 flex flex-col items-center justify-center min-h-[260px] shadow-sm hover:shadow-md hover:border-gold/30 hover:-translate-y-1 transition-all duration-300 group">
-                <div className="flex flex-col items-center text-center">
-                  {/* Indus Enclave Logo */}
-                  <div className="h-20 flex items-center justify-center mb-4">
-                    <img
-                      src="/indus-logo.png"
-                      alt="Indus Enclave Logo"
-                      className="max-h-full w-auto object-contain"
-                    />
-                  </div>
-                  <h4 className="font-display font-black text-xl text-[#0F172A] tracking-wider uppercase">
-                    Indus Enclave
-                  </h4>
-                  <p className="text-[#64748B] text-[10px] uppercase tracking-widest mt-1 font-semibold font-display">
-                    Premium Real Estate
-                  </p>
-                </div>
-              </div>
-            </AnimatedSection>
-
-            {/* Card 2: Viral Marketing */}
-            <AnimatedSection delay={0.2}>
-              <div className="bg-white rounded-3xl border border-gold/10 p-8 flex flex-col items-center justify-center min-h-[260px] shadow-sm hover:shadow-md hover:border-gold/30 hover:-translate-y-1 transition-all duration-300 group">
-                <div className="flex flex-col items-center text-center">
-                  {/* Viral Marketing Logo */}
-                  <div className="h-20 flex items-center justify-center mb-4">
-                    <img
-                      src="/viral-logo.png"
-                      alt="Viral Marketing Logo"
-                      className="max-h-full w-auto object-contain"
-                    />
-                  </div>
-                  <h4 className="font-display font-black text-xl text-[#0F172A] tracking-wider uppercase">
-                    Viral Marketing
-                  </h4>
-                  <p className="text-[#64748B] text-[10px] uppercase tracking-widest mt-1 font-semibold font-display">
-                    Commercial Outreach
-                  </p>
-                </div>
-              </div>
-            </AnimatedSection>
-
-            {/* Card 3: Arm Arch */}
-            <AnimatedSection delay={0.3}>
-              <div className="bg-white rounded-3xl border border-gold/10 p-8 flex flex-col items-center justify-center min-h-[260px] shadow-sm hover:shadow-md hover:border-gold/30 hover:-translate-y-1 transition-all duration-300 group">
-                <div className="flex flex-col items-center text-center">
-                  {/* ArmArch Logo */}
-                  <div className="h-20 flex items-center justify-center mb-4">
-                    <img
-                      src="/armarch-logo.png"
-                      alt="ArmArch Logo"
-                      className="max-h-full w-auto object-contain"
-                    />
-                  </div>
-                  <h4 className="font-display font-black text-xl text-[#0F172A] tracking-widest uppercase">
-                    ArmArch
-                  </h4>
-                  <p className="text-[#64748B] text-[10px] uppercase tracking-widest mt-1 font-semibold font-display">
-                    Architecture & Construction
-                  </p>
-                </div>
-              </div>
-            </AnimatedSection>
-
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {companies.slice(0, 6).map((company, i) => (
+              <AnimatedSection key={company.slug} delay={(i % 3) * 0.1}>
+                <CompanyCard company={company} className="h-full" />
+              </AnimatedSection>
+            ))}
           </div>
 
-          <AnimatedSection className="flex justify-center mt-10">
+          <AnimatedSection className="flex justify-center mt-12">
             <Link
-              href="/projects"
-              className="inline-flex items-center gap-2 rounded-full border border-gold/40 text-gold px-6 py-2.5 text-sm font-semibold hover:bg-gold hover:text-charcoal-900 transition-all duration-300"
+              href="/companies"
+              className="inline-flex items-center gap-2 rounded-full border border-gold/45 text-gold px-7 py-3 text-sm font-semibold hover:bg-gold hover:text-charcoal-900 transition-all duration-300 shadow-gold-sm hover:shadow-gold"
             >
-              View More
+              View All Companies
             </Link>
           </AnimatedSection>
         </Container>
@@ -344,7 +284,7 @@ export default function HomePage() {
                   Corporate Head Office
                 </h4>
                 <p className="text-warm-300 text-sm leading-relaxed font-light">
-                  Plot # B-02, Main University Rd, Block 10 Gulshan-e-Iqbal, Karachi, Pakistan.
+                  Osif Arcade, Main University Rd, Block 15 Block 13 A Gulshan-e-Iqbal, Karachi, Pakistan.
                 </p>
               </div>
             </AnimatedSection>
@@ -354,7 +294,7 @@ export default function HomePage() {
           <AnimatedSection delay={0.1} className="rounded-3xl overflow-hidden border border-white/5 relative">
             <div className="absolute inset-0 bg-surface-1/5 z-10 pointer-events-none" />
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.7046!2d67.0943!3d24.9056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e856e49b955%3A0xbc56b1db94dd8e86!2sGulshan-e-Iqbal%2C%20Karachi%2C%20Karachi%20City%2C%20Sindh%2C%20Pakistan!5e0!3m2!1sen!2s!4v1719000000000!5m2!1sen!2s"
+              src="https://maps.google.com/maps?q=W33H%2BQGF+Karachi+Pakistan&output=embed&z=17"
               width="100%"
               height="400"
               style={{ border: 0, filter: "invert(90%) hue-rotate(180deg) saturate(0.8) brightness(0.85)" }}

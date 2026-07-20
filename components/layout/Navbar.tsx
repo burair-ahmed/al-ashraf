@@ -12,7 +12,7 @@ const mainNav = [
   { label: "Home",        href: "/" },
   { label: "About Us",    href: "/about" },
   { label: "Team",        href: "/#team" },
-  { label: "Portfolio",   href: "/projects" },
+  { label: "Companies",   href: "/companies" },
   { label: "Careers",     href: "/careers" },
   { label: "Contact Us",  href: "/contact" },
 ];

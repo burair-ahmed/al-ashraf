@@ -92,7 +92,7 @@ export default function BusinessesPage() {
         heading="Interested in Partnering With Us?"
         description="Whether you're looking for construction expertise, dairy supply, e-commerce partnerships, or services — we're here to help."
         primaryCta={{ label: "Contact Us", href: "/contact" }}
-        secondaryCta={{ label: "View Projects", href: "/projects" }}
+        secondaryCta={{ label: "Explore Companies", href: "/companies" }}
       />
     </>
   );

@@ -12,9 +12,9 @@ export const metadata: Metadata = {
 };
 
 const contactDetails = [
-  { icon: MapPin, label: "Headquarters",  value: "Block 15, Gulshan-e-Iqbal\nKarachi, Pakistan" },
-  { icon: Phone,  label: "Phone",         value: "+92 21 000 0000", href: "tel:+920000000000" }, // TODO
-  { icon: Mail,   label: "Email",         value: "info@alashrafgroup.com", href: "mailto:info@alashrafgroup.com" }, // TODO
+  { icon: MapPin, label: "Headquarters",  value: "Osif Arcade, W33H+QGF, Main University Rd, Block 15 Block 13 A Gulshan-e-Iqbal, Karachi, Pakistan" },
+  { icon: Phone,  label: "Phone",         value: "(111) ASHRAF (274-723)", href: "tel:+92111274723" },
+  { icon: Mail,   label: "Email",         value: "info@alashrafgoc.com", href: "mailto:info@alashrafgoc.com" },
   { icon: Clock,  label: "Office Hours",  value: "Monday – Saturday\n9:00 AM – 6:00 PM PKT" },
 ];
 
@@ -99,14 +99,14 @@ export default function ContactPage() {
         <div className="relative h-80 w-full overflow-hidden">
           <div className="absolute inset-0 bg-surface-1/50 z-10 pointer-events-none" />
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.7046!2d67.0943!3d24.9056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e856e49b955%3A0xbc56b1db94dd8e86!2sGulshan-e-Iqbal%2C%20Karachi%2C%20Karachi%20City%2C%20Sindh%2C%20Pakistan!5e0!3m2!1sen!2s!4v1719000000000!5m2!1sen!2s"
+            src="https://maps.google.com/maps?q=W33H%2BQGF+Karachi+Pakistan&output=embed&z=17"
             width="100%"
             height="100%"
             style={{ border: 0, filter: "invert(90%) hue-rotate(180deg) saturate(0.8) brightness(0.85)" }}
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="Al Ashraf Group HQ location — Gulshan-e-Iqbal, Karachi"
+            title="Al Ashraf Group HQ — Osif Arcade, Gulshan-e-Iqbal, Karachi"
           />
         </div>
       </section>

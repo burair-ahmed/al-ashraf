@@ -23,7 +23,7 @@ const slides = [
     eyebrow: "Construction & Real Estate",
     title: "Engineering the Future",
     description: "From landmark high-rises to vital transport roadways, we shape the infrastructure of Pakistan.",
-    primaryCta: { label: "View Portfolio", href: "/projects" },
+    primaryCta: { label: "Explore Companies", href: "/companies" },
     secondaryCta: { label: "Get in Touch", href: "/contact" }
   },
   {

@@ -1,23 +1,24 @@
 "use client";
 
 import Link from "next/link";
-import { MapPin, Phone, Mail, Globe, Share2, MessageCircle, AtSign } from "lucide-react";
+import { MapPin, Phone, Mail } from "lucide-react";
+import { FaFacebook, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 import { Container } from "@/components/ui/Container";
 import { divisions } from "@/data/divisions";
 
 const quickLinks = [
   { label: "About Us",      href: "/about" },
-  { label: "Projects",      href: "/projects" },
+  { label: "Companies",     href: "/companies" },
   { label: "Careers",       href: "/careers" },
   { label: "News & Updates",href: "/news" },
   { label: "Contact Us",    href: "/contact" },
 ];
 
 const socialLinks = [
-  { label: "LinkedIn",   href: "#", icon: Globe },
-  { label: "Facebook",   href: "#", icon: Share2 },
-  { label: "Instagram",  href: "#", icon: MessageCircle },
-  { label: "Twitter / X",href: "#", icon: AtSign },
+  { label: "Facebook",  href: "https://www.facebook.com/profile.php?id=61552719850210&mibextid=ZbWKwL", icon: FaFacebook },
+  { label: "Instagram", href: "https://instagram.com/alashraf_group_of_companies?igshid=OGQ5ZDc2ODk2ZA==", icon: FaInstagram },
+  { label: "LinkedIn",  href: "https://www.linkedin.com/company/al-ashraf-group-of-companies/", icon: FaLinkedinIn },
+  { label: "YouTube",   href: "https://www.youtube.com/@IndusEnclaveHousingProject", icon: FaYoutube },
 ];
 
 export function Footer() {
@@ -76,15 +77,15 @@ export function Footer() {
             <div className="space-y-3.5 text-sm text-warm-500 mb-6">
               <div className="flex items-start gap-2.5">
                 <MapPin className="h-4 w-4 text-gold mt-0.5 shrink-0" />
-                <span>Plot # B-02, Main University Rd, Block 10 Gulshan-e-Iqbal, Karachi, Pakistan</span>
+                <span>Osif Arcade, Main University Rd, Block 15 Block 13 A Gulshan-e-Iqbal, Karachi, Pakistan</span>
               </div>
-              <a href="tel:+922134944448" className="flex items-center gap-2.5 hover:text-gold transition-colors duration-200">
+              <a href="tel:+92111274723" className="flex items-center gap-2.5 hover:text-gold transition-colors duration-200">
                 <Phone className="h-4 w-4 text-gold shrink-0" />
-                <span>+92 21 34944448 / +92 21 34941122</span>
+                <span>(111) ASHRAF (274-723)</span>
               </a>
-              <a href="mailto:info@alashrafgroup.com" className="flex items-center gap-2.5 hover:text-gold transition-colors duration-200">
+              <a href="mailto:info@alashrafgoc.com" className="flex items-center gap-2.5 hover:text-gold transition-colors duration-200">
                 <Mail className="h-4 w-4 text-gold shrink-0" />
-                <span>info@alashrafgroup.com</span>
+                <span>info@alashrafgoc.com</span>
               </a>
             </div>
 

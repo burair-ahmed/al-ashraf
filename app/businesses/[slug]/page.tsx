@@ -8,9 +8,9 @@ import { CTASection } from "@/components/layout/CTASection";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
-import { ProjectCard } from "@/components/ui/ProjectCard";
+import { CompanyCard } from "@/components/ui/CompanyCard";
 import { divisions, getDivisionBySlug } from "@/data/divisions";
-import { projects } from "@/data/projects";
+import { getCompaniesByDivisionSlug } from "@/data/companies";
 
 interface Props { params: Promise<{ slug: string }>; }
 
@@ -35,9 +35,7 @@ export default async function DivisionPage({ params }: Props) {
   const Icon = iconMap[division.icon] ?? Building2;
   const isGold = division.accentColor === "gold";
 
-  const relatedProjects = slug === "construction-real-estate"
-    ? projects.filter((p) => p.featured).slice(0, 3)
-    : [];
+  const divisionCompanies = getCompaniesByDivisionSlug(slug);
 
   return (
     <>
@@ -109,20 +107,20 @@ export default async function DivisionPage({ params }: Props) {
         </Container>
       </section>
 
-      {/* ── Related Projects (Construction only) ── */}
-      {relatedProjects.length > 0 && (
-        <section className="py-section-lg bg-surface-3" aria-label="Related projects">
+      {/* ── Division Subsidiaries ── */}
+      {divisionCompanies.length > 0 && (
+        <section className="py-section-lg bg-surface-3" aria-label="Our Subsidiaries">
           <Container>
             <AnimatedSection className="flex items-end justify-between gap-6 mb-14 flex-wrap">
-              <SectionHeading eyebrow="Our Portfolio" title="Selected Projects" />
-              <Link href="/projects" className="inline-flex items-center gap-2 text-sm font-semibold text-gold hover:text-gold-light transition-colors duration-200 shrink-0">
+              <SectionHeading eyebrow="Our Subsidiaries" title="Child Companies" />
+              <Link href="/companies" className="inline-flex items-center gap-2 text-sm font-semibold text-gold hover:text-gold-light transition-colors duration-200 shrink-0">
                 View all <ArrowRight className="h-4 w-4" />
               </Link>
             </AnimatedSection>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-              {relatedProjects.map((project, i) => (
-                <AnimatedSection key={project.slug} delay={i * 0.1}>
-                  <ProjectCard project={project} className="h-full" />
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {divisionCompanies.map((company, i) => (
+                <AnimatedSection key={company.slug} delay={i * 0.1}>
+                  <CompanyCard company={company} className="h-full" />
                 </AnimatedSection>
               ))}
             </div>

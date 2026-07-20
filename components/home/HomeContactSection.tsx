@@ -10,18 +10,19 @@ const contactDetails = [
   {
     icon: MapPin,
     label: "Headquarters",
-    value: "Plot # B-02, Main University Rd, Block 10 Gulshan-e-Iqbal, Karachi, Pakistan",
+    value: "Osif Arcade, W33H+QGF, Main University Rd, Block 15 Block 13 A Gulshan-e-Iqbal, Karachi, Pakistan",
   },
   {
     icon: Phone,
     label: "Phone Numbers",
-    value: "+92 21 34944448\n+92 21 34941122",
+    value: "(111) ASHRAF (274-723)",
+    href: "tel:+92111274723",
   },
   {
     icon: Mail,
     label: "General Email",
-    value: "info@alashrafgroup.com",
-    href: "mailto:info@alashrafgroup.com",
+    value: "info@alashrafgoc.com",
+    href: "mailto:info@alashrafgoc.com",
   },
   {
     icon: Clock,
