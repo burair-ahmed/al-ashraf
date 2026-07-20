@@ -27,16 +27,17 @@ export function CompanyCard({ company, className }: CompanyCardProps) {
   return (
     <motion.article
       whileHover={{ y: -6 }}
-      transition={{ duration: 0.3, ease: "easeOut" }}
+      transition={{ duration: 0.25, ease: "easeOut" }}
+      style={{ willChange: "transform" }}
       className={cn(
-        "group relative overflow-visible rounded-3xl bg-surface-4 border border-white/5",
-        "shadow-card hover:shadow-card-hover transition-all duration-300 flex flex-col h-full",
+        "group relative overflow-hidden rounded-3xl bg-surface-4 border border-white/5",
+        "shadow-card hover:shadow-card-hover transition-shadow duration-300 flex flex-col h-full",
         isGold ? "hover:border-gold/20" : "hover:border-teal/20",
         className
       )}
     >
       {/* Background Image Header */}
-      <div className="relative h-48 w-full overflow-hidden rounded-t-3xl">
+      <div className="relative h-48 w-full shrink-0 overflow-hidden">
         <Image
           src={company.bgImage}
           alt={company.name}
@@ -44,10 +45,16 @@ export function CompanyCard({ company, className }: CompanyCardProps) {
           className="object-cover transition-transform duration-700 group-hover:scale-105"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-surface-4 via-surface-4/40 to-transparent" />
       </div>
 
-      {/* Floating Logo / Icon Badge — outside overflow-hidden so it renders on top */}
+      {/* Gradient bridge — lives OUTSIDE the image div so it straddles the seam.
+          Spans 80px above h-48 (12rem) and 2px below it, eliminating any hard line. */}
+      <div
+        className="absolute inset-x-0 z-10 pointer-events-none bg-gradient-to-b from-transparent to-surface-4"
+        style={{ top: "calc(12rem - 80px)", height: "82px" }}
+      />
+
+      {/* Floating Logo / Icon Badge */}
       <div className="absolute left-6 z-20" style={{ top: "calc(12rem - 32px)" }}>
         <div className={cn(
           "h-16 w-16 rounded-2xl bg-surface-3 border flex items-center justify-center p-3 shadow-xl transition-all duration-300",
