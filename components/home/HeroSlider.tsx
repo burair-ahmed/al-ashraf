@@ -50,12 +50,12 @@ const brandSeals = [
   { short: "Al-Ashraf GOC", name: "Al Ashraf Group" },
   { short: "AAC", name: "Al Ashraf Construction" },
   { short: "AAD", name: "Al Ashraf Dairy" },
-  { short: "AEC", name: "Al Ashraf E-Commerce" },
-  { short: "ACS", name: "Consumer Services" },
+  { short: "CLK", name: "Cafe Little Karachi" },
+  { short: "LKR", name: "Little Karachi Restaurant" },
   { short: "IE", name: "Indus Enclave" },
   { short: "VM", name: "Viral Marketing" },
   { short: "AA", name: "Arm Arch" },
-  { short: "AAL", name: "Al Ashraf Logistics" }
+  { short: "FM", name: "Food Master" }
 ];
 
 export function HeroSlider() {

@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Building2, Milk, ShoppingCart, Users, Truck, ArrowRight } from "lucide-react";
+import { Building2, Milk, ShoppingCart, Users, Truck, ArrowRight, Coffee, Utensils } from "lucide-react";
 import { type Company } from "@/data/companies";
 import { cn } from "@/lib/utils";
 
@@ -13,6 +13,8 @@ const iconMap: Record<string, React.ElementType> = {
   ShoppingCart,
   Users,
   Truck,
+  Coffee,
+  Utensils,
 };
 
 interface CompanyCardProps {
@@ -57,7 +59,7 @@ export function CompanyCard({ company, className }: CompanyCardProps) {
       {/* Floating Logo / Icon Badge */}
       <div className="absolute left-6 z-20" style={{ top: "calc(12rem - 32px)" }}>
         <div className={cn(
-          "h-16 w-16 rounded-2xl bg-surface-3 border flex items-center justify-center p-3 shadow-xl transition-all duration-300",
+          "h-16 w-16 rounded-2xl bg-white border flex items-center justify-center p-3 shadow-xl transition-all duration-300",
           isGold
             ? "border-gold/30 group-hover:border-gold/60 group-hover:shadow-gold-sm"
             : "border-teal/30 group-hover:border-teal/60"
@@ -72,7 +74,7 @@ export function CompanyCard({ company, className }: CompanyCardProps) {
             <Icon
               className={cn(
                 "h-7 w-7",
-                isGold ? "text-gold" : "text-teal-light"
+                isGold ? "text-gold" : "text-teal"
               )}
             />
           )}

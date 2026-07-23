@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 import { divisions } from "@/data/divisions";
 import { newsItems } from "@/data/news";
 
-const BASE_URL = "https://www.alashrafgroup.com"; // TODO: update with real domain
+const BASE_URL = "https://www.alashrafgoc.com"; // TODO: update with real domain
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = [
