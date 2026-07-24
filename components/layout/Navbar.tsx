@@ -11,7 +11,7 @@ import { divisions } from "@/data/divisions";
 const mainNav = [
   { label: "Home",        href: "/" },
   { label: "About Us",    href: "/about" },
-  { label: "Team",        href: "/#team" },
+  { label: "Team",        href: "/team" },
   { label: "Companies",   href: "/companies" },
   { label: "Careers",     href: "/careers" },
   { label: "Contact Us",  href: "/contact" },

@@ -177,8 +177,8 @@ export default function AboutPage() {
           </AnimatedSection>
           <div className="mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {teamMembers.map((member, i) => (
-              <AnimatedSection key={member.id} delay={i * 0.1}>
-                <TeamMemberCard member={member} />
+              <AnimatedSection key={member.id} delay={i * 0.1} className="h-full">
+                <TeamMemberCard member={member} className="h-full" />
               </AnimatedSection>
             ))}
           </div>

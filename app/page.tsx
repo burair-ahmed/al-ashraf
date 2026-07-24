@@ -9,23 +9,22 @@ import {
   Target
 } from "lucide-react";
 
+/* ── Branded Social Icons ── */
 const FacebookIcon = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
-    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+  <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+    <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.268h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z" />
+  </svg>
+);
+
+const InstagramIcon = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
   </svg>
 );
 
 const LinkedinIcon = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
-    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-    <rect x="2" y="9" width="4" height="12" />
-    <circle cx="4" cy="4" r="2" />
-  </svg>
-);
-
-const TwitterIcon = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
-    <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
+  <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
   </svg>
 );
 import { Container } from "@/components/ui/Container";
@@ -48,25 +47,28 @@ const teamMembers = [
     name: "Ashraf Jabbar Qureshi",
     title: "Founder & Group Chairman",
     image: "/ashraf.webp",
-    fb: "#",
-    ln: "#",
-    tw: "#"
+    bio: "Hailing from a prestigious lineage known for fruit exporting, Ashraf Jabbar Qureshi diverged from this legacy to explore varied sectors — from restaurants to real estate, construction, and online retail. He founded Indus Enclave in Karachi and built his success on values of integrity, passion, and hard work. His deep love for architecture led him to establish an architectural firm, embodying a dynamic entrepreneurial spirit.",
+    fb: "https://www.facebook.com/AshrafJQureshi?mibextid=PzaGJu",
+    ig: "https://instagram.com/ashrafqureshipti?igshid=OGQ5ZDc2ODk2ZA==",
+    ln: null
   },
   {
     name: "Dai Ali Daniyal",
     title: "Chief Executive Officer",
     image: "/dai.webp",
-    fb: "#",
-    ln: "#",
-    tw: "#"
+    bio: "Inheriting a strong entrepreneurial legacy, Dai Ali Daniyal honed his skills within the family business before earning degrees in Business Management and International Business. His strategic vision expanded the group across industries, and his passion for sustainable architecture led him to helm ArmArch, pioneering innovative designs in Pakistan. His journey reflects dedication, vision, and a relentless pursuit of excellence.",
+    fb: "https://www.facebook.com/profile.php?id=61552761699032&mibextid=PzaGJu",
+    ig: "https://instagram.com/thedaialidaniyal?igshid=OGQ5ZDc2ODk2ZA==",
+    ln: "https://www.linkedin.com/in/dai-ali-daniyal-a50077183"
   },
   {
-    name: "Armash Ashraf",
+    name: "Eng. Armash Ashraf",
     title: "Chief Operating Officer",
     image: "/armash.webp",
-    fb: "#",
-    ln: "#",
-    tw: "#"
+    bio: "COO of Al-Ashraf Group and Chief Engineer at ArmArch, Armash holds a Bachelor's in Architectural Engineering from Heriot-Watt University. With a focus on sustainability, he completed 31 courses in sustainability techniques. He founded ArmArch during his studies to revolutionize Pakistan's construction industry, launching the firm in October 2023.",
+    fb: null,
+    ig: null,
+    ln: "https://linkedin.com/in/armash-ashraf-5839381a0"
   }
 ];
 
@@ -174,8 +176,8 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {teamMembers.map((member, i) => (
-              <AnimatedSection key={member.name} delay={i * 0.1}>
-                <div className="group bg-[#040404] border border-gold/20 p-8 rounded-2xl flex flex-col items-center text-center relative hover:border-gold transition-all duration-300">
+              <AnimatedSection key={member.name} delay={i * 0.1} className="h-full">
+                <div className="group bg-[#040404] border border-gold/20 p-8 rounded-2xl flex flex-col items-center text-center relative hover:border-gold transition-all duration-300 h-full">
                   {/* Photo with double border container */}
                   <div className="relative h-32 w-32 rounded-full overflow-hidden border border-gold/30 p-1.5 bg-black/60 mb-6 group-hover:scale-105 transition-all duration-300">
                     <div className="relative h-full w-full rounded-full overflow-hidden border border-gold/10">
@@ -194,45 +196,60 @@ export default function HomePage() {
                     {member.title}
                   </p>
 
-                  <div className="w-12 h-px bg-gold/30 my-5" />
+                  <div className="w-12 h-px bg-gold/30 my-4" />
 
-                  {/* Social Media Icons */}
-                  <div className="flex gap-4">
-                    <a
-                      href={member.fb}
-                      className="h-8 w-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-warm-400 hover:bg-gold hover:text-charcoal-900 transition-colors duration-200"
-                      aria-label="Facebook Profile"
-                    >
-                      <FacebookIcon className="h-4 w-4" />
-                    </a>
-                    <a
-                      href={member.ln}
-                      className="h-8 w-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-warm-400 hover:bg-gold hover:text-charcoal-900 transition-colors duration-200"
-                      aria-label="LinkedIn Profile"
-                    >
-                      <LinkedinIcon className="h-4 w-4" />
-                    </a>
-                    <a
-                      href={member.tw}
-                      className="h-8 w-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-warm-400 hover:bg-gold hover:text-charcoal-900 transition-colors duration-200"
-                      aria-label="Twitter Profile"
-                    >
-                      <TwitterIcon className="h-4 w-4" />
-                    </a>
+                  <a
+                    href={`/team#${member.name === "Ashraf Jabbar Qureshi" ? "tm-001" : member.name === "Dai Ali Daniyal" ? "tm-002" : "tm-003"}`}
+                    className="inline-flex items-center gap-1.5 rounded-full border border-gold/40 text-gold px-5 py-2 text-xs font-semibold hover:bg-gold hover:text-charcoal-900 transition-all duration-200 mb-4"
+                  >
+                    View Bio
+                  </a>
+
+                  {/* Social Media Icons — branded colours */}
+                  <div className="flex gap-3 mt-auto">
+                    {member.fb && (
+                      <a
+                        href={member.fb}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="h-8 w-8 rounded-full flex items-center justify-center transition-transform duration-200 hover:scale-110"
+                        style={{ backgroundColor: "#1877F2" }}
+                        aria-label={`${member.name} on Facebook`}
+                      >
+                        <FacebookIcon className="h-4 w-4 text-white" />
+                      </a>
+                    )}
+                    {member.ig && (
+                      <a
+                        href={member.ig}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="h-8 w-8 rounded-full flex items-center justify-center transition-transform duration-200 hover:scale-110"
+                        style={{ background: "radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%)" }}
+                        aria-label={`${member.name} on Instagram`}
+                      >
+                        <InstagramIcon className="h-4 w-4 text-white" />
+                      </a>
+                    )}
+                    {member.ln && (
+                      <a
+                        href={member.ln}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="h-8 w-8 rounded-full flex items-center justify-center transition-transform duration-200 hover:scale-110"
+                        style={{ backgroundColor: "#0A66C2" }}
+                        aria-label={`${member.name} on LinkedIn`}
+                      >
+                        <LinkedinIcon className="h-4 w-4 text-white" />
+                      </a>
+                    )}
                   </div>
                 </div>
               </AnimatedSection>
             ))}
           </div>
 
-          <AnimatedSection className="flex justify-center mt-10">
-            <Link
-              href="/about#team"
-              className="inline-flex items-center gap-2 rounded-full border border-gold/40 text-gold px-6 py-2.5 text-sm font-semibold hover:bg-gold hover:text-charcoal-900 transition-all duration-300"
-            >
-              View More
-            </Link>
-          </AnimatedSection>
+
         </Container>
       </section>
 
