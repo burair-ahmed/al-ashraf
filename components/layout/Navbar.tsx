@@ -52,10 +52,10 @@ export function Navbar() {
     <>
       <header
         className={cn(
-          "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
+          "fixed top-0 left-0 right-0 z-50 w-full overflow-x-hidden border-b transition-all duration-300",
           scrolled
-            ? "bg-surface-1/90 backdrop-blur-xl shadow-[0_1px_0_rgba(255,255,255,0.05)] border-b border-white/5"
-            : "bg-transparent"
+            ? "bg-surface-1/90 backdrop-blur-xl shadow-[0_1px_0_rgba(255,255,255,0.05)] border-white/5"
+            : "bg-transparent border-transparent"
         )}
       >
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -66,7 +66,7 @@ export function Navbar() {
               <img
                 src="/al-ashraf-logo.png"
                 alt="Al Ashraf Group of Companies Logo"
-                style={{ height: "52px", width: "auto" }}
+              style={{ height: "44px", width: "auto" }}
                 className="object-contain transition-transform duration-200 group-hover:scale-[1.02]"
               />
             </Link>
@@ -102,7 +102,7 @@ export function Navbar() {
             {/* Mobile hamburger */}
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
-              className="lg:hidden flex h-10 w-10 items-center justify-center rounded-full bg-surface-4 border border-white/8 text-warm-200 hover:border-gold/40 hover:text-gold transition-all duration-200"
+              className="lg:hidden flex h-9 w-9 items-center justify-center rounded-full bg-surface-4 border border-white/8 text-warm-200 hover:border-gold/40 hover:text-gold transition-all duration-200 shrink-0"
               aria-label={mobileOpen ? "Close menu" : "Open menu"}
               aria-expanded={mobileOpen}
               aria-controls="mobile-menu"
