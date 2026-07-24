@@ -51,7 +51,7 @@ export const companies: Company[] = [
     logoUrl: "/cafe-little-karachi-logo.png",
     iconName: "Utensils",
     accentColor: "gold",
-    bgImage: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80",
+    bgImage: "/cafe-banner.webp",
   },
   {
     slug: "viral-marketing",

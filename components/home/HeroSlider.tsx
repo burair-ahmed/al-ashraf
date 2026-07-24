@@ -19,7 +19,7 @@ const slides = [
   },
   {
     id: 2,
-    image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1920&q=85",
+    image: "/banner-2.webp",
     eyebrow: "Construction & Real Estate",
     title: "Engineering the Future",
     description: "From landmark high-rises to vital transport roadways, we shape the infrastructure of Pakistan.",
@@ -28,20 +28,20 @@ const slides = [
   },
   {
     id: 3,
-    image: "https://images.unsplash.com/photo-1527018601619-a508a2be00cd?w=1920&q=85",
-    eyebrow: "Dairy Products",
-    title: "Purity & Quality Daily",
-    description: "Nourishing families across Karachi with farm-fresh, processed dairy products of absolute purity.",
-    primaryCta: { label: "Our Products", href: "/about" },
-    secondaryCta: { label: "Partner with Us", href: "/contact" }
+    image: "/cafe-banner.webp",
+    eyebrow: "Cafe Little Karachi",
+    title: "Authentic Karachi Dining",
+    description: "A vibrant dining experience serving authentic Karachi flavors, traditional recipes, and warm hospitality.",
+    primaryCta: { label: "Explore Cafe", href: "/companies#cafe-little-karachi" },
+    secondaryCta: { label: "Get in Touch", href: "/contact" }
   },
   {
     id: 4,
-    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1920&q=85",
-    eyebrow: "E-Commerce & Digital Services",
-    title: "Commerce Without Borders",
-    description: "Empowering consumers across Pakistan through scalable technology and direct delivery services.",
-    primaryCta: { label: "Learn More", href: "/about" },
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1920&q=85",
+    eyebrow: "Viral Marketing",
+    title: "Commercial Outreach & Advertising",
+    description: "A creative advertising agency providing robust outreach, digital marketing, and brand promotion strategies.",
+    primaryCta: { label: "Explore Services", href: "/companies#viral-marketing" },
     secondaryCta: { label: "Contact Us", href: "/contact" }
   }
 ];
