@@ -1,122 +1,106 @@
-# 🏛️ Al Ashraf Group of Companies (Al-Ashraf GOC) Corporate Portal
+# Al Ashraf Group of Companies (Al-Ashraf GOC)
 
-Welcome to the official repository for the **Al Ashraf Group of Companies (Al-Ashraf GOC)** web portal. This is a premium, high-performance web application designed to showcase the diversified business verticals, corporate structure, projects portfolio, and career opportunities of the Al-Ashraf GOC conglomerate.
-
----
-
-## ⚡ Tech Stack & Architecture
-
-This application is built with modern, state-of-the-art web technologies for maximum performance, responsiveness, and aesthetic appeal:
-
-*   **Framework**: [Next.js 16 (App Router)](https://nextjs.org/) for server-side rendering, routing, optimization, and seamless developer experience.
-*   **Library**: [React 19](https://react.dev/) using modern Hooks and concurrent rendering capabilities.
-*   **Styling**: [TailwindCSS v4](https://tailwindcss.com/) with PostCSS, using CSS variables for a curated HSL-tailored gold/teal theme.
-*   **Animations**: [Framer Motion](https://www.framer.com/motion/) for smooth, premium micro-interactions, page transitions, and slide animations.
-*   **Form Management**: [React Hook Form](https://react-hook-form.com/) combined with [Zod](https://zod.dev/) for robust, type-safe schema validation.
-*   **Icons**: [Lucide React](https://lucide.dev/) for crisp, scalable vector icons.
-*   **Language**: [TypeScript](https://www.typescriptlang.org/) for strict type safety and code readability.
+The official website of Al Ashraf Group of Companies (Al-Ashraf GOC). This website is high-performance designed to showcase the diversified business verticals, corporate structure, projects portfolio, and career opportunities of the conglomerate.
 
 ---
 
-## 📦 Directory Structure
+## Core Business Divisions
+
+The Al Ashraf Group operates across three key business sectors:
+
+1. **Construction & Real Estate**: Building modern infrastructure, roadways, residential, and commercial developments across Pakistan. Key subsidiaries include Indus Enclave and ArmArch.
+2. **IT & Tech Sector**: Providing digital infrastructure, software engineering, and strategic advertising solutions. Key subsidiaries include Viral Marketing.
+3. **Restaurants**: Delivering authentic dining experiences and premium culinary services. Key subsidiaries include Cafe Little Karachi, Little Karachi Restaurant, and Food Master.
+
+---
+
+## Tech Stack & Architecture
+
+This application is built using modern front-end technologies:
+
+* **Framework**: Next.js (App Router) for optimized server-side rendering, routing, and asset delivery.
+* **Component Library**: React using concurrent rendering capabilities.
+* **Styling**: TailwindCSS v4 utilizing CSS variables for theme tokenization.
+* **Animations**: Framer Motion for smooth UI transitions and micro-interactions.
+* **Form & Validation**: React Hook Form combined with Zod for type-safe schema validation.
+* **Icons**: Lucide React for scalable vector icons.
+* **Language**: TypeScript for static type safety.
+
+---
+
+## Project Structure
 
 ```filepath
 al-ashraf/
 ├── app/                  # Next.js App Router Pages
-│   ├── about/            # Corporate history, team, and core pillars
-│   ├── businesses/       # Details about the 4 main business verticals
+│   ├── about/            # Corporate history, team, and group structure
+│   ├── businesses/       # Business divisions dynamic views
 │   ├── careers/          # Interactive job applications & hiring portal
 │   ├── contact/          # Inquiries and locations map
-│   ├── news/             # Press releases and media coverage
-│   ├── projects/         # Engineering, residential, & infrastructure showcase
-│   ├── globals.css       # Core Tailwind configuration & global typography
+│   ├── team/             # Leadership and executive team bios
+│   ├── companies/        # Subsidiaries and company details
 │   ├── layout.tsx        # Shell layout (Navbar & Footer wrapper)
 │   └── page.tsx          # Interactive Homepage
-├── components/           # Reusable React Components
-│   ├── ui/               # Atoms & Base UI (Buttons, Cards, Animators)
-│   ├── layout/           # Navbar, Footer, Hero, CTA
+├── components/           # Reusable UI components
+│   ├── ui/               # Atoms and base elements (Buttons, Cards, Animators)
+│   ├── layout/           # Shared layout containers (Navbar, Footer, Hero)
 │   └── forms/            # Form structures & input fields
-├── data/                 # Static data models & mock database entries
-│   ├── divisions.ts      # Core business division definitions
-│   ├── news.ts           # News data items
-│   ├── projects.ts       # Ongoing & completed project datasets
-│   └── team.ts           # Executive team profile bios
-└── lib/                  # Utility classes & common helper functions
+├── data/                 # Static data models & records
+│   ├── divisions.ts      # Business division configurations
+│   ├── companies.ts      # Subsidiary company records
+│   ├── team.ts           # Team member biographies and social links
+│   └── news.ts           # Corporate news and updates
+└── lib/                  # Utility classes & helper functions
 ```
 
 ---
 
-## 🏢 Business Verticals Showcased
+## Getting Started
 
-The website highlights the four pillars of **Al Ashraf Group of Companies**:
+To set up and run the application locally, follow the steps below:
 
-1.  **Construction & Real Estate**: Infrastructure, roadways, residential, and commercial developments delivered across Pakistan since 2017.
-2.  **Dairy Products**: Farm-fresh dairy supply chains, quality processing, and distribution networks.
-3.  **E-commerce**: Digital retail platforms bridging online sales, order fulfillment, and last-mile logistics.
-4.  **Consumer Services**: Professional facility management, maintenance services, and corporate solutions.
+### Prerequisites
 
----
-
-## 🚀 Getting Started
-
-To run the application locally on your computer, follow these simple steps:
-
-### Prerequisite
-
-Make sure you have Node.js (version 18+ recommended) and `npm` installed.
+Ensure you have Node.js (version 18 or higher) and npm installed on your system.
 
 ### 1. Installation
 
-Clone the repository, navigate to the folder, and install all dependencies:
+Install all required dependencies:
 
 ```bash
-# Clone the repository
-git clone https://github.com/your-username/al-ashraf.git
-
-# Enter workspace
-cd al-ashraf
-
 # Install packages
 npm install
 ```
 
 ### 2. Running in Development
 
-Launch the hot-reloading development server:
+Start the development server with hot-reloading:
 
 ```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your web browser to view the application.
+Open your browser and navigate to `http://localhost:3000` to view the local instance.
 
 ### 3. Production Build
 
-Build the static and dynamic bundles optimized for production:
+To build and run the optimized production bundle:
 
 ```bash
-# Run linting
+# Run code linting
 npm run lint
 
 # Generate production build
 npm run build
 
-# Start the production server
+# Start production server
 npm run start
 ```
 
 ---
 
-## 🎨 Theme & Typography
+## Development Standards
 
-- **Theme Palette**: Rich dark surface backgrounds (`#0B0D11`, `#11141B`) combined with premium luxury HSL gold accent colors and clean teals.
-- **Typography**: Responsive, high-contrast, modern fonts featuring large display headers for a state-of-the-art look and feel.
-- **Animation System**: Smooth entry animations for headers, cards, and sliders driven by customized Framer Motion wrappers.
-
----
-
-## 📝 Contribution & Standards
-
-- **Linting**: Ensure code adheres to Next.js standards by running `npm run lint`.
-- **TypeScript**: All data and component props should be explicitly typed.
-- **Styling**: Prefer utility classes from TailwindCSS v4 and reuse semantic components in `components/ui`.
+* **Type Safety**: All components, helpers, and data models must be explicitly typed using TypeScript.
+* **Style Consistency**: Utilize CSS design tokens defined in `globals.css` and utility classes from TailwindCSS v4.
+* **Responsive Design**: Ensure layouts are fully responsive and optimized for mobile, tablet, and desktop viewports.
