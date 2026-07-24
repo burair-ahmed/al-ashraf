@@ -10,7 +10,7 @@ const contactDetails = [
   {
     icon: MapPin,
     label: "Headquarters",
-    value: "Osif Arcade, W33H+QGF, Main University Rd, Block 15 Block 13 A Gulshan-e-Iqbal, Karachi, Pakistan",
+    value: "Osif Arcade, Main University Rd, Block 15 Block 13 A Gulshan-e-Iqbal, Karachi, Pakistan",
   },
   {
     icon: Phone,

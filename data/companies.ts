@@ -92,31 +92,6 @@ export const companies: Company[] = [
     accentColor: "teal",
     bgImage: "https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=800&q=80",
   },
-  // Companies with Fallback Icons
-  {
-    slug: "al-ashraf-construction",
-    name: "Al Ashraf Construction",
-    shortName: "AAC",
-    tagline: "Infrastructure & Development",
-    description: "Delivering state-of-the-art residential, commercial, and roadway infrastructure projects across Pakistan since 2017.",
-    divisionSlug: "construction-real-estate",
-    divisionName: "Construction & Real Estate",
-    iconName: "Building2",
-    accentColor: "gold",
-    bgImage: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80",
-  },
-  {
-    slug: "al-ashraf-dairy",
-    name: "Al Ashraf Dairy Products",
-    shortName: "AAD",
-    tagline: "Farm-Fresh Dairy",
-    description: "Supplying pure, hygienic, and farm-fresh dairy products daily to families and retailers across Karachi.",
-    divisionSlug: "dairy",
-    divisionName: "Dairy Products",
-    iconName: "Milk",
-    accentColor: "teal",
-    bgImage: "https://images.unsplash.com/photo-1550583724-b2692b85b150?w=800&q=80",
-  },
 ];
 
 export function getCompaniesByDivisionSlug(divisionSlug: string): Company[] {

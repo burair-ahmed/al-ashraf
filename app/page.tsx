@@ -248,7 +248,7 @@ export default function HomePage() {
           </AnimatedSection>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {companies.slice(0, 6).map((company, i) => (
+            {companies.slice(0, 3).map((company, i) => (
               <AnimatedSection key={company.slug} delay={(i % 3) * 0.1}>
                 <CompanyCard company={company} className="h-full" />
               </AnimatedSection>

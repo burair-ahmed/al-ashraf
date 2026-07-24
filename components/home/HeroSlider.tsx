@@ -29,7 +29,7 @@ const slides = [
   {
     id: 3,
     image: "https://images.unsplash.com/photo-1527018601619-a508a2be00cd?w=1920&q=85",
-    eyebrow: "Al Ashraf Dairy Products",
+    eyebrow: "Dairy Products",
     title: "Purity & Quality Daily",
     description: "Nourishing families across Karachi with farm-fresh, processed dairy products of absolute purity.",
     primaryCta: { label: "Our Products", href: "/about" },
@@ -48,8 +48,6 @@ const slides = [
 
 const brandSeals = [
   { short: "Al-Ashraf GOC", name: "Al Ashraf Group" },
-  { short: "AAC", name: "Al Ashraf Construction" },
-  { short: "AAD", name: "Al Ashraf Dairy" },
   { short: "CLK", name: "Cafe Little Karachi" },
   { short: "LKR", name: "Little Karachi Restaurant" },
   { short: "IE", name: "Indus Enclave" },
