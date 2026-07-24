@@ -75,7 +75,7 @@ export function HeroSlider() {
   };
 
   return (
-    <div className="relative w-full h-[95vh] min-h-[650px] overflow-hidden bg-black" aria-label="Hero slider">
+    <div className="relative w-full h-[95vh] min-h-[650px] overflow-hidden overflow-x-hidden bg-black" aria-label="Hero slider">
       {/* Slides */}
       <div className="absolute inset-0 z-0">
         <AnimatePresence mode="wait">
@@ -103,7 +103,7 @@ export function HeroSlider() {
       </div>
 
       {/* Slide Indicators */}
-      <div className="absolute right-8 top-1/2 -translate-y-1/2 z-30 flex flex-col gap-3">
+      <div className="absolute right-3 sm:right-6 top-1/2 -translate-y-1/2 z-30 flex flex-col gap-3">
         {slides.map((_, index) => (
           <button
             key={index}
@@ -119,7 +119,7 @@ export function HeroSlider() {
 
       {/* Content */}
       <div className="relative z-20 h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center pb-24 pt-20">
-        <div className="max-w-3xl">
+        <div className="max-w-3xl pr-12 sm:pr-16 lg:pr-0">
           <motion.p
             key={`eyebrow-${current}`}
             initial={{ opacity: 0, y: 15 }}
