@@ -13,7 +13,7 @@ const slides = [
     image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=85",
     eyebrow: "Al Ashraf Group of Companies",
     title: "Building Lasting Impressions",
-    description: "A diversified Pakistani conglomerate delivering excellence in Construction, Dairy, E-commerce, and Consumer Services.",
+    description: "A diversified Pakistani conglomerate delivering excellence in Construction, Dairy, IT & Tech, and Restaurants.",
     primaryCta: { label: "Explore Our Businesses", href: "/#about" },
     secondaryCta: { label: "Contact Us", href: "/contact" }
   },

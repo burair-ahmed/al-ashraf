@@ -49,7 +49,7 @@ export default function AboutPage() {
               <SectionHeading
                 eyebrow="Our Story"
                 title="From Karachi, For Pakistan"
-                description="Founded in 2017 and headquartered in Karachi's Gulshan-e-Iqbal, Al Ashraf Group of Companies has grown into a diversified group spanning construction and real estate, dairy products, e-commerce, and consumer services."
+                description="Founded in 2017 and headquartered in Karachi's Gulshan-e-Iqbal, Al Ashraf Group of Companies has grown into a diversified group spanning construction & real estate, dairy products, IT & Tech, and restaurants."
               />
               <div className="mt-8 grid grid-cols-3 gap-6">
                 {[
@@ -189,7 +189,7 @@ export default function AboutPage() {
       <section className="py-section-lg bg-surface-3" aria-label="Group structure">
         <Container size="md">
           <AnimatedSection>
-            <SectionHeading eyebrow="Group Structure" title="One Group, Four Verticals" light align="center" />
+            <SectionHeading eyebrow="Group Structure" title="One Group, Three Verticals" light align="center" />
           </AnimatedSection>
           <AnimatedSection delay={0.2} className="mt-12">
             <div className="flex flex-col items-center">
@@ -198,15 +198,45 @@ export default function AboutPage() {
                 <p className="text-lg">Al Ashraf Group of Companies</p>
               </div>
               <div className="w-px h-10 bg-white/10" aria-hidden="true" />
-              <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 w-full max-w-3xl">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
                 {[
-                  { name: "Construction\n& Real Estate", border: "border-gold/25" },
-                  { name: "Dairy\nProducts",             border: "border-teal/25" },
-                  { name: "E-commerce",                  border: "border-gold/25" },
-                  { name: "Consumer\nServices",          border: "border-teal/25" },
-                ].map((div) => (
-                  <div key={div.name} className={`${div.border} border bg-surface-4 rounded-xl p-4 text-center text-warm-200 font-display font-semibold text-sm`}>
-                    {div.name.split("\n").map((line, li) => <span key={li} className="block">{line}</span>)}
+                  {
+                    division: "Construction & Real Estate",
+                    border: "border-gold/25",
+                    companies: [
+                      { name: "Indus Enclave", tagline: "Premium Real Estate" },
+                      { name: "ArmArch", tagline: "Architecture & Design" }
+                    ]
+                  },
+                  {
+                    division: "IT & Tech Sector",
+                    border: "border-gold/25",
+                    companies: [
+                      { name: "Viral Marketing", tagline: "Outreach & Advertising" }
+                    ]
+                  },
+                  {
+                    division: "Restaurants",
+                    border: "border-teal/25",
+                    companies: [
+                      { name: "Cafe Little Karachi", tagline: "Authentic Dining & Cafe" },
+                      { name: "Little Karachi Restaurant", tagline: "Cuisine & Dining" },
+                      { name: "Food Master", tagline: "Culinary Products & Services" }
+                    ]
+                  }
+                ].map((group) => (
+                  <div key={group.division} className={`${group.border} border bg-surface-4 rounded-xl p-6 flex flex-col hover:border-gold/40 transition-colors duration-300`}>
+                    <h3 className="text-warm-50 font-display font-bold text-sm uppercase tracking-wider mb-4 border-b border-white/5 pb-3 text-center">
+                      {group.division}
+                    </h3>
+                    <div className="space-y-3 flex-1 flex flex-col justify-center">
+                      {group.companies.map((c) => (
+                        <div key={c.name} className="bg-surface-3/50 border border-white/5 rounded-lg p-3 text-center hover:border-white/10 transition-colors duration-200">
+                          <h4 className="font-semibold text-warm-100 text-sm mb-0.5">{c.name}</h4>
+                          <p className="text-xs text-warm-400 font-light">{c.tagline}</p>
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 ))}
               </div>

@@ -39,7 +39,7 @@ export function Footer() {
               />
             </Link>
             <p className="text-warm-500 text-sm leading-relaxed">
-              Founded in 2017, Al-Ashraf GOC is a diversified conglomerate headquartered in Karachi, delivering excellence across construction, dairy, e-commerce, and consumer services.
+              Founded in 2017, Al-Ashraf GOC is a diversified conglomerate headquartered in Karachi, delivering excellence across construction, dairy, IT & Tech, and restaurants.
             </p>
           </div>
 

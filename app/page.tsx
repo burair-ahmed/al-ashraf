@@ -39,7 +39,7 @@ import { companies } from "@/data/companies";
 export const metadata: Metadata = {
   title: "Al Ashraf Group of Companies | Building Lasting Impressions",
   description:
-    "Al-Ashraf GOC is a diversified Pakistani conglomerate headquartered in Karachi, delivering excellence across construction, dairy, e-commerce, and consumer services since 2017.",
+    "Al-Ashraf GOC is a diversified Pakistani conglomerate headquartered in Karachi, delivering excellence across construction, dairy, IT & Tech, and restaurants since 2017.",
 };
 
 const teamMembers = [

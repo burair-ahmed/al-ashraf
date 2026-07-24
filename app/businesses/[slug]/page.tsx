@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import { CheckCircle, ArrowRight, Building2, Milk, ShoppingCart, Users } from "lucide-react";
+import { CheckCircle, ArrowRight, Building2, Milk, ShoppingCart, Users, Laptop } from "lucide-react";
 import { Hero } from "@/components/layout/Hero";
 import { CTASection } from "@/components/layout/CTASection";
 import { Container } from "@/components/ui/Container";
@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return { title: division.name, description: division.description };
 }
 
-const iconMap: Record<string, React.ElementType> = { Building2, Milk, ShoppingCart, Users };
+const iconMap: Record<string, React.ElementType> = { Building2, Milk, ShoppingCart, Users, Laptop };
 
 export default async function DivisionPage({ params }: Props) {
   const { slug } = await params;

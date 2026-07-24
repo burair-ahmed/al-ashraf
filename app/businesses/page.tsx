@@ -10,7 +10,7 @@ import { divisions } from "@/data/divisions";
 
 export const metadata: Metadata = {
   title: "Our Businesses",
-  description: "Explore Al Ashraf Group's four business divisions: Construction & Real Estate, Dairy Products, E-commerce, and Consumer Services.",
+  description: "Explore Al Ashraf Group's four business divisions: Construction & Real Estate, Dairy Products, IT & Tech, and Restaurants.",
 };
 
 export default function BusinessesPage() {
@@ -90,7 +90,7 @@ export default function BusinessesPage() {
       <CTASection
         eyebrow="Inquiries"
         heading="Interested in Partnering With Us?"
-        description="Whether you're looking for construction expertise, dairy supply, e-commerce partnerships, or services — we're here to help."
+        description="Whether you're looking for construction expertise, dairy supply, IT & Tech partnerships, or dining solutions — we're here to help."
         primaryCta={{ label: "Contact Us", href: "/contact" }}
         secondaryCta={{ label: "Explore Companies", href: "/companies" }}
       />

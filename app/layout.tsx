@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     template: "%s | Al Ashraf Group of Companies",
   },
   description:
-    "Al Ashraf Group of Companies (Al-Ashraf GOC) is a diversified Pakistani business group headquartered in Karachi, operating across construction & real estate, dairy products, e-commerce, and consumer services.",
+    "Al Ashraf Group of Companies (Al-Ashraf GOC) is a diversified Pakistani business group headquartered in Karachi, operating across construction & real estate, dairy products, IT & Tech, and restaurants.",
   keywords: [
     "Al Ashraf Group",
     "Al-Ashraf GOC",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     siteName: "Al Ashraf Group of Companies",
     title: "Al Ashraf Group of Companies | Building Lasting Impressions",
     description:
-      "Diversified Pakistani business group operating across construction, dairy, e-commerce, and consumer services — driven by Strength, Performance, and Passion.",
+      "Diversified Pakistani business group operating across construction, dairy, IT & Tech, and restaurants — driven by Strength, Performance, and Passion.",
     images: [
       {
         url: "/og-image.jpg", // TODO: add real OG image

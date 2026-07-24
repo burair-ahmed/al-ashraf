@@ -45,90 +45,61 @@ export const divisions: Division[] = [
     ],
   },
   {
-    slug: "dairy",
-    name: "Dairy Products",
-    shortName: "Dairy",
-    tagline: "Fresh quality, delivered daily.",
+    slug: "it-tech",
+    name: "IT & Tech Sector",
+    shortName: "IT & Tech",
+    tagline: "Empowering growth through innovative technology solutions.",
     description:
-      "Our dairy division supplies fresh, high-quality dairy products to consumers and retailers across Karachi, committed to purity, nutrition, and consistency.",
+      "Providing robust digital infrastructure, custom software engineering, and strategic outreach.",
     longDescription:
-      "The Al Ashraf Dairy Products division brings farm-fresh quality to tables across Karachi. We maintain rigorous quality control at every step — from sourcing to processing and distribution — ensuring our products meet the highest food safety standards. Our range includes fresh milk, yogurt, and specialty dairy items, all produced with the goal of nourishing families while building trust through transparency and quality you can taste.",
-    heroImage:
-      "https://images.unsplash.com/photo-1550583724-b2692b85b150?w=1920&q=80", // TODO: replace with real product photo
-    cardImage:
-      "https://images.unsplash.com/photo-1628088062854-d1870b4553da?w=800&q=80", // TODO: replace with real product photo
-    accentColor: "teal",
-    icon: "Milk",
-    services: [
-      "Fresh Milk Supply",
-      "Dairy Processing",
-      "Retail Distribution",
-      "Wholesale Supply",
-      "Quality Assurance",
-      "Cold Chain Logistics",
-    ],
-    highlights: [
-      { label: "Products in Range", value: "10+" },
-      { label: "Daily Deliveries", value: "500+" },
-      { label: "Retail Partners", value: "100+" },
-    ],
-  },
-  {
-    slug: "ecommerce",
-    name: "E-commerce",
-    shortName: "E-commerce",
-    tagline: "Commerce without boundaries.",
-    description:
-      "Our e-commerce vertical operates a growing online retail platform, connecting customers across Pakistan with products they need — fast, reliably, and at great value.",
-    longDescription:
-      "Al Ashraf E-commerce is the group's digital commerce arm, tapping into Pakistan's rapidly expanding online retail market. Our platform offers a curated selection of products with a focus on customer experience, fast fulfillment, and competitive pricing. We leverage technology-driven logistics and customer insights to continuously improve the shopping journey, making quality products accessible to more Pakistanis every day.",
+      "Al Ashraf IT & Tech division is dedicated to navigating the digital landscape. We design, deploy, and maintain custom software and tech infrastructure, enabling businesses to scale seamlessly. From advanced marketing systems to comprehensive data analytics and corporate IT setups, we leverage cutting-edge tech to deliver reliable, high-performance solutions.",
     heroImage:
       "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=1920&q=80", // TODO: replace with real platform screenshot
     cardImage:
       "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80", // TODO: replace with real platform photo
     accentColor: "gold",
-    icon: "ShoppingCart",
+    icon: "Laptop",
     services: [
-      "Online Retail Platform",
-      "Product Sourcing & Curation",
-      "Order Fulfillment",
-      "Customer Service",
-      "Last-Mile Delivery",
-      "Vendor Partnership",
+      "Custom Software Engineering",
+      "IT Infrastructure Setup",
+      "Digital Marketing",
+      "Commercial Outreach",
+      "Cloud Solutions",
+      "Tech Advisory",
     ],
     highlights: [
-      { label: "Products Listed", value: "1,000+" },
-      { label: "Orders Fulfilled", value: "10,000+" },
-      { label: "Customer Rating", value: "4.8★" },
+      { label: "Projects Completed", value: "30+" },
+      { label: "Client Retainers", value: "15+" },
+      { label: "Uptime SLA", value: "99.9%" },
     ],
   },
   {
-    slug: "consumer-services",
-    name: "Consumer Services",
-    shortName: "Services",
-    tagline: "Serving communities, building trust.",
+    slug: "restaurants",
+    name: "Restaurants",
+    shortName: "Restaurants",
+    tagline: "Serving authentic flavors and warm hospitality.",
     description:
-      "Our consumer services division provides a broad range of essential services to households and businesses across Karachi, driven by reliability and community focus.",
+      "Providing exceptional dining experiences across Karachi, serving traditional recipes and premium culinary solutions.",
     longDescription:
-      "Al Ashraf Consumer Services is our general services vertical, dedicated to meeting the everyday needs of Karachi's residents and businesses. From facility management to maintenance and general services, we bring the same commitment to quality and reliability that defines every Al-Ashraf GOC enterprise. Our teams are trained, professional, and community-minded — because we believe great service is the foundation of lasting relationships.",
+      "Al Ashraf Restaurants division brings the rich culinary heritage of Pakistan to life. Through established culinary brands like Cafe Little Karachi and Little Karachi Restaurant, as well as Food Master, we serve authentic tastes prepared under the highest standards of hygiene and quality. We are committed to culinary excellence and welcoming service.",
     heroImage:
       "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1920&q=80", // TODO: replace with real service photo
     cardImage:
       "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80", // TODO: replace with real service photo
     accentColor: "teal",
-    icon: "Users",
+    icon: "Utensils",
     services: [
-      "Facility Management",
-      "Maintenance Services",
-      "General Contracting",
-      "Household Services",
-      "Corporate Services",
-      "Community Programs",
+      "Fine Dining Experience",
+      "Authentic Karachi Cuisine",
+      "Catering & Events",
+      "Culinary Products",
+      "Food Delivery Network",
+      "Kitchen Hygiene QA",
     ],
     highlights: [
-      { label: "Clients Served", value: "200+" },
-      { label: "Service Categories", value: "6+" },
-      { label: "Team Members", value: "50+" },
+      { label: "Outlets Active", value: "3+" },
+      { label: "Monthly Guests", value: "15,000+" },
+      { label: "Customer Rating", value: "4.9★" },
     ],
   },
 ];

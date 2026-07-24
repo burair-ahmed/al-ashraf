@@ -20,8 +20,8 @@ type ContactFormData = z.infer<typeof contactSchema>;
 const subjects = [
   "Construction & Real Estate Inquiry",
   "Dairy Products Inquiry",
-  "E-commerce Partnership",
-  "Consumer Services Inquiry",
+  "IT & Tech Sector Inquiry",
+  "Restaurants & Dining Inquiry",
   "Career Opportunities",
   "Media & Press",
   "General Inquiry",

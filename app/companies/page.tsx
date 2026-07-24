@@ -27,7 +27,7 @@ export default function CompaniesPage() {
             <SectionHeading
               eyebrow="Our Companies"
               title="All Subsidiaries"
-              description="Explore our specialized subsidiaries operating across construction, dairy, e-commerce, and general consumer services."
+              description="Explore our specialized subsidiaries operating across construction, dairy, IT & Tech, and restaurants."
             />
           </AnimatedSection>
 

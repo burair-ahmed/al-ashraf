@@ -7,7 +7,7 @@ import { AnimatedSection } from "@/components/ui/AnimatedSection";
 export const metadata: Metadata = {
   title: "Our Team | Al Ashraf Group of Companies",
   description:
-    "Meet the leadership team behind Al Ashraf Group of Companies - the visionaries driving excellence across construction, dairy, e-commerce, and consumer services.",
+    "Meet the leadership team behind Al Ashraf Group of Companies - the visionaries driving excellence across construction, dairy, IT & Tech, and restaurants.",
 };
 
 const FacebookIcon = (props: React.SVGProps<SVGSVGElement>) => (
