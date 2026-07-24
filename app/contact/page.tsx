@@ -12,17 +12,16 @@ export const metadata: Metadata = {
 };
 
 const contactDetails = [
-  { icon: MapPin, label: "Headquarters",  value: "Osif Arcade, W33H+QGF, Main University Rd, Block 15 Block 13 A Gulshan-e-Iqbal, Karachi, Pakistan" },
+  { icon: MapPin, label: "Headquarters",  value: "Osif Arcade, Main University Rd, Block 15 Block 13 A Gulshan-e-Iqbal, Karachi, Pakistan" },
   { icon: Phone,  label: "Phone",         value: "(111) ASHRAF (274-723)", href: "tel:+92111274723" },
   { icon: Mail,   label: "Email",         value: "info@alashrafgoc.com", href: "mailto:info@alashrafgoc.com" },
   { icon: Clock,  label: "Office Hours",  value: "Monday – Saturday\n9:00 AM – 6:00 PM PKT" },
 ];
 
 const divisionContacts = [
-  { division: "Construction & Real Estate", email: "construction@alashrafgroup.com" },
-  { division: "Dairy Products",             email: "dairy@alashrafgroup.com" },
-  { division: "E-commerce",                 email: "ecommerce@alashrafgroup.com" },
-  { division: "Consumer Services",          email: "services@alashrafgroup.com" },
+  { division: "Indus Enclave",    email: "info@indusenclave.com" },
+  { division: "Viral Marketing",  email: "info@viralmarketingsolution.com" },
+  { division: "ArmArch",          email: "info@armarchengineering.com" },
 ];
 
 export default function ContactPage() {
@@ -70,7 +69,7 @@ export default function ContactPage() {
               </AnimatedSection>
 
               <AnimatedSection direction="right" delay={0.2}>
-                <h3 className="font-display font-bold text-lg text-warm-50 mb-4">Division Contacts</h3>
+                <h3 className="font-display font-bold text-lg text-warm-50 mb-4">Company Contacts</h3>
                 <div className="space-y-3">
                   {divisionContacts.map((dc) => (
                     <div key={dc.division} className="flex items-center justify-between gap-4 py-3 border-b border-white/5">
@@ -95,20 +94,22 @@ export default function ContactPage() {
       </section>
 
       {/* Map */}
-      <section aria-label="Office location map">
-        <div className="relative h-80 w-full overflow-hidden">
-          <div className="absolute inset-0 bg-surface-1/50 z-10 pointer-events-none" />
-          <iframe
-            src="https://maps.google.com/maps?q=W33H%2BQGF+Karachi+Pakistan&output=embed&z=17"
-            width="100%"
-            height="100%"
-            style={{ border: 0, filter: "invert(90%) hue-rotate(180deg) saturate(0.8) brightness(0.85)" }}
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            title="Al Ashraf Group HQ — Osif Arcade, Gulshan-e-Iqbal, Karachi"
-          />
-        </div>
+      <section className="pb-section bg-surface-1" aria-label="Office location map">
+        <Container>
+          <AnimatedSection delay={0.1} className="rounded-2xl overflow-hidden border border-white/5 relative">
+            <div className="absolute inset-0 bg-surface-1/5 z-10 pointer-events-none" />
+            <iframe
+              src="https://maps.google.com/maps?q=W33H%2BQGF+Karachi+Pakistan&output=embed&z=17"
+              width="100%"
+              height="400"
+              style={{ border: 0, filter: "invert(90%) hue-rotate(180deg) saturate(0.8) brightness(0.85)" }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Al Ashraf Group HQ — Osif Arcade, Gulshan-e-Iqbal, Karachi"
+            />
+          </AnimatedSection>
+        </Container>
       </section>
     </>
   );
